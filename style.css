@@ -21,7 +21,7 @@ body{
     margin-left: 50px;
 }
 .cabecalho img{
-    width: 100px;
+    max-width: 100px;
 }
 .container{
     color:white;
@@ -29,9 +29,8 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 80px;
-
-    
+    margin:  50px auto;
+    max-width: 800px;
 }
 .titulo{
     text-align: center;
@@ -50,13 +49,12 @@ body{
 }
 
 .lista li{
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -64,8 +62,8 @@ body{
     cursor: pointer;
 }
 .lista li img{
-    width: 147px;
-    height: 147px;
+    max-width: 147px;
+    max-height: 147px;
     border-radius: 5px;
 }
 .lista li:hover{
@@ -109,23 +107,25 @@ body{
 footer{
     color: white;
     text-align: center;
-    margin-top:60px;
+    margin-top:70px;
+    margin-bottom: 20px;
 }
 @media screen and (max-width:375px){
+    .container{
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .lista li img{
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         border-radius: 5px;
     }
     .lista li{
         width: 23px;
         height: 23px;
-        margin: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 5px;
-        cursor: pointer;
+        padding: 25px;
     }
 }
